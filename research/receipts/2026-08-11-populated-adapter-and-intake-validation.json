@@ -1,0 +1,10 @@
+{
+  "schema":"stegverse.erl.research_surface_validation_receipt.v1",
+  "repository":"StegVerse-Labs/Maxwellality",
+  "adapter_commit":"fec5cf7375dcb73b732a8758d1fa4bd6e1e3176c",
+  "test_fixture_commit":"e04dd32d99b69f150a31d5db818c65945c48aac2",
+  "validation_type":"local_deterministic_contract_harness_plus_committed_reproducible_fixture",
+  "assertions":{"active_trajectory_requests":1,"saturated_trajectory_requests":0,"candidate_count":2,"receipt_count":2,"supporting_candidate_preserved":true,"contrary_candidate_preserved":true,"null_result_preserved":true,"duplicate_matching_link_collapsed":true,"candidate_intake_validator":"PASS","credential_authority":"TV/TVC","github_token_authority":"NONE","authority_effect":"NONE","native_records_mutated":false,"evaluation_changed":false},
+  "result":"PASS",
+  "promotion_effect":"eligible for ERL registry CONFORMING promotion; local evaluation authority remains NONE"
+}
