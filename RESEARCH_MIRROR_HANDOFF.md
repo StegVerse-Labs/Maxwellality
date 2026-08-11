@@ -2,7 +2,6 @@
 
 ## Authority
 - goal_id: ERL-RESEARCH-SURFACE-MAXWELLALITY-001
-- originating_goal: install Trumpality-style governed research acquisition under ERL multi-trajectory authority
 - repository: StegVerse-Labs/Maxwellality
 - branch: main
 - canonical_owner: StegVerse-Labs/Executive_Rhetoric_Ledger Issue #60
@@ -12,34 +11,28 @@
 - github_token_authority: NONE
 
 ## Claim
-- state: CLAIMED_FOR_IMPLEMENTATION
-- claimant: current repository implementation lane
-- created_at: 2026-08-11T15:34:00Z
-- release_condition: common research surface installed, validated, and ERL registry promoted
+- state: CLAIMED_FOR_VALIDATION
+- release_condition: deterministic populated fixture validation and ERL registry promotion
 
-## Authoritative files
-- `research/README.md`
-- `research/frontier.json`
-- `research/acquisition_requests.jsonl`
-- `research/source_candidates.jsonl`
-- `research/research_receipts.jsonl`
-- `data/sources/sources_whitelist.csv`
-- `scripts/search_agent.py`
-- upstream standard: `StegVerse-Labs/Executive_Rhetoric_Ledger/standards/multi-trajectory-research-surface.v1.md`
+## Installed authoritative files
+`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
 
-## Incomplete work
-Install/validate the common research surface and candidate boundary. Local discoveries remain lead-only/context-only until ERL review.
+Upstream standard: `StegVerse-Labs/Executive_Rhetoric_Ledger/standards/multi-trajectory-research-surface.v1.md`.
 
-## Validation
-- `python scripts/search_agent.py --base . --dry-run`
-- parse frontier JSON and JSONL research ledgers
+## Evidence
+- handoff: `be60c9edb5ca9bc0c055b474f52af31177a88bb8`
+- research surface: `8babcbcf1d415f94324a27ad5ff182dfc2bc510a`
 
-## Dependencies
-- StegVerse-Labs/Executive_Rhetoric_Ledger Issue #60
-- TV/TVC credential governance
+Local output remains lead-only/context-only; all trajectories are eligible for search; contradictory/null evidence and newly discovered trajectories are preserved; ERL retains evaluation authority.
+
+## Remaining
+1. deterministic populated fixture and adapter execution proof;
+2. ERL candidate transport/intake validation;
+3. registry promotion to CONFORMING.
 
 ## Completion accounting
-- developed-files: 1/8
+- developed-files: 8/8 = 100%
+- scaffolding/stubs: 0
 - validation: 0/3
-- integration: 0/2
-- goal-activation: 10%
+- integration: 1/2
+- goal-activation: 65%
