@@ -15,15 +15,21 @@
 - release_condition: deterministic populated fixture validation and ERL registry promotion
 
 ## Installed authoritative files
-`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
+`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `research/conformance.json`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
 
 Upstream standard: `StegVerse-Labs/Executive_Rhetoric_Ledger/standards/multi-trajectory-research-surface.v1.md`.
+
+## Research posture
+- recurrence: REQUIRED while litigation, documentary, institutional, or public-record evidence can still alter OPEN/ACTIVE trajectories
+- default cadence: weekly, adjusted by trajectory volatility
+- `.github/workflows/weekly-ingest.ym` is transport/ingest, not automatically a research monitor
+- all plausible trajectories are eligible for search; contradictory/null/new trajectories are preserved
+- local output remains lead-only/context-only until ERL review
 
 ## Evidence
 - handoff: `be60c9edb5ca9bc0c055b474f52af31177a88bb8`
 - research surface: `8babcbcf1d415f94324a27ad5ff182dfc2bc510a`
-
-Local output remains lead-only/context-only; all trajectories are eligible for search; contradictory/null evidence and newly discovered trajectories are preserved; ERL retains evaluation authority.
+- conformance/recurrence profile: `5fb0542bcbfb591e0ccc572e2fe513d91753c080`
 
 ## Remaining
 1. deterministic populated fixture and adapter execution proof;
@@ -31,8 +37,8 @@ Local output remains lead-only/context-only; all trajectories are eligible for s
 3. registry promotion to CONFORMING.
 
 ## Completion accounting
-- developed-files: 8/8 = 100%
+- developed-files: 9/9 = 100%
 - scaffolding/stubs: 0
 - validation: 0/3
 - integration: 1/2
-- goal-activation: 65%
+- goal-activation: 68%
