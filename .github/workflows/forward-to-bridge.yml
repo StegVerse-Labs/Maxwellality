@@ -1,20 +1,19 @@
-# .github/workflows/forward-to-bridge.yml
-name: Forward PR to StegVerse AI Bridge
+name: Forward PR to StegVerse AI Bridge [CONTAINED — TV/TVC AUTHORITY REQUIRED]
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
 
 jobs:
-  forward:
+  contained:
     runs-on: ubuntu-latest
     steps:
-      - name: Call repository_dispatch on bridge
-        env:
-          GH_TOKEN: ${{ secrets.GH_STEGVERSE_AI_TOKEN }}
+      - name: Block legacy public-repository bridge dispatch
+        shell: bash
         run: |
-          echo "${GH_TOKEN}" | gh auth login --with-token
-          gh api repos/StegVerse/hybrid-collab-bridge/dispatches \
-            -X POST \
-            -F event_type="stegverse-ai-review" \
-            -F client_payload="{\"target_repo\":\"${GITHUB_REPOSITORY}\",\"pr_number\":${{ github.event.pull_request.number }}}"
+          set -euo pipefail
+          echo "::error::This legacy workflow is contained because it used a generic non-TV/TVC credential to dispatch to the superseded StegVerse/hybrid-collab-bridge repository path."
+          echo "This repository is currently public; historical credential/run/visibility provenance remains an explicit audit requirement."
+          exit 1
